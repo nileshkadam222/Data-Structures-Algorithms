@@ -32,7 +32,6 @@ public class ReverseNumber {
 		Integer num = 3456345;
 		String s = "Hi I am Nilesh";
 		reverseStringOrNumber.accept(s,num);
-		
 	}
 
 }
