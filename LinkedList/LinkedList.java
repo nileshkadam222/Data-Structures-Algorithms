@@ -6,6 +6,7 @@ public class LinkedList {
 
 	Node head;
 	Node tail;
+	int length = 0;
 
 	static class Node {
 		int data;
@@ -17,7 +18,7 @@ public class LinkedList {
 		}
 	}
 
-	public static LinkedList insert(LinkedList list, int data) {
+	public static LinkedList append(LinkedList list, int data) {
 		Node new_node = new Node(data);
 		new_node.next = null;
 
@@ -35,7 +36,7 @@ public class LinkedList {
 			 * last.next = new_node;
 			 */
 		}
-
+		list.length ++;
 		return list;
 	}
 
@@ -43,6 +44,7 @@ public class LinkedList {
 		Node new_node = new Node(data);
 		new_node.next = list.head;
 		list.head = new_node;
+		list.length ++;
 		return list;
 	}
 
@@ -53,17 +55,40 @@ public class LinkedList {
 			currentNode = currentNode.next;
 		}
 	};
+	
+	static LinkedList insert(int index,int data,LinkedList list) {
+		Node currentNode = list.head;
+		Node preNode = list.head;
+		for(int i=0;i<list.length;i++) {
+			if((index-1) == i) {
+				preNode = currentNode;
+			}else if(index == i) {
+				Node newNode = new Node(data);
+				newNode.next = preNode.next;
+				preNode.next = newNode;
+				list.length ++;
+				break;
+			}else {
+				currentNode = currentNode.next;
+			}
+		}
+		return list;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkedList list = new LinkedList();
-		list = insert(list, 10);
-		list = insert(list, 20);
-		list = insert(list, 30);
+		list = append(list, 10);
+		list = append(list, 20);
+		list = append(list, 30);
 		printList.accept(list);
 		list = prepend(list, 30);
 		System.out.println();
 		printList.accept(list);
+		list = insert(2,101,list);
+		System.out.println();
+		printList.accept(list);
+		
 	}
 
 }
