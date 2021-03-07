@@ -74,6 +74,24 @@ public class LinkedList {
 		}
 		return list;
 	}
+	
+	static void remove(int index,LinkedList list) {
+		Node currentElement = list.head;
+		for(int i=0;i<list.length;i++) {
+			if(index ==0) {
+				list.head = list.head.next;
+				list.length --;
+				break;
+			}else if(i== (index-1)) {
+				currentElement.next = currentElement.next.next;
+				list.length --;
+				break;
+			
+			}else {
+				currentElement = currentElement.next;
+			}
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -86,6 +104,9 @@ public class LinkedList {
 		System.out.println();
 		printList.accept(list);
 		list = insert(2,101,list);
+		System.out.println();
+		printList.accept(list);
+		remove(2,list);
 		System.out.println();
 		printList.accept(list);
 		

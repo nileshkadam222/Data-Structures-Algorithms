@@ -1,3 +1,4 @@
+package com.datastructure.Arrays;
 import java.util.function.Function;
 
 public class findString {

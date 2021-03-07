@@ -1,3 +1,4 @@
+package com.datastructure.Arrays;
 import java.util.LinkedHashMap;
 import java.util.function.Consumer;
 import java.util.function.Function;

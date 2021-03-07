@@ -1,3 +1,4 @@
+package com.datastructure.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiPredicate;
