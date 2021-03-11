@@ -5,7 +5,6 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class StackWithArrays {
-
 	String[] arr;
 	int index;
 	int size;
@@ -15,7 +14,6 @@ public class StackWithArrays {
 		this.size = size;
 		this.arr = new String[size];
 	}
-	
 
 	public Consumer<String> push = s -> {arr[index]=s;index++;};
 	public Supplier<String> pop = () -> arr[--index];
