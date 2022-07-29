@@ -38,8 +38,7 @@ public class DynamicArrays {
 		array[currentLenght] = value;
 		currentLenght ++;
 	}
-	
-	
+
 	public void pop() {
 		if(currentLenght >0) {
 			currentLenght --;
