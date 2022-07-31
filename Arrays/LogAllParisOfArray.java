@@ -3,18 +3,13 @@ package com.datastructure.Arrays;
 public class LogAllParisOfArray {
 
     public static void main(String[] args) {
+        int[] array = {1,2,3,4,5,6};
 
-        box b = new box();
-        box b1 = new box();
-        b.height = 10;
-        b1 = b;
-
-        System.out.println(b1.height);
-
-        String obj = "I"+"Like"+"Java";
-        System.out.println(obj);
-
-
+        for(int i=0;i<array.length;i++){
+            for(int j=0;j<array.length;j++){
+                System.out.println(array[i] + " "+array[j]);
+            }
+        }
     }
 }
 
