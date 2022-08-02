@@ -52,6 +52,21 @@ public class LinkedList {
         length--;
     }
 
+    public void reverse() {
+        if (this.head.next != null) {
+            Node firstNode = head;
+            Node secondnode = firstNode.next;
+
+            while (secondnode != null) {
+                Node thiredNdode= secondnode.next;
+                secondnode.next = firstNode;
+                firstNode = secondnode;
+                secondnode = thiredNdode;
+            }
+        }
+    }
+
+
     private Node trversalToIndex(int index){
         Node currentNode = head;
         int counter = 0;

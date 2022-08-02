@@ -17,6 +17,8 @@ public class UseOfSinglyLinkList {
         l.remove(2);
         l.remove(2);
         l.printList();
+        l.reverse();
+        l.printList();
 
     }
 }
