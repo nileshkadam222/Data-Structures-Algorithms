@@ -9,6 +9,7 @@ public class ContainsCommonItems {
 
     public static void main(String[] args) {
 
+
         String[] array1 = {"a","b","b","c"};
         String[] array2 = {"a","b","b"};
         printCommonItems(array1,array2);
