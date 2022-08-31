@@ -1,6 +1,5 @@
-package com.datastrucutre.QueueImpl;
+package com.datastructure.data_structures.Queue.UseingNode;
 
-import java.util.function.Consumer;
 import java.util.function.IntConsumer;
 import java.util.function.IntSupplier;
 

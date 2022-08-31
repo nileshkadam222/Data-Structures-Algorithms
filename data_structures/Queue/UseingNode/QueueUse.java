@@ -1,4 +1,4 @@
-package com.datastrucutre.QueueImpl;
+package com.datastructure.data_structures.Queue.UseingNode;
 
 public class QueueUse {
 
