@@ -11,6 +11,7 @@ public class QueueUsingStack {
 
     private Integer front;
 
+
     QueueUsingStack(){
         this.stack1 = new Stack<>();
         this.stack2 = new Stack<>();
