@@ -1,6 +1,5 @@
 package com.datastructure.data_structures.Queue.UsingStack;
 
-import com.sun.org.apache.bcel.internal.classfile.InnerClass;
 
 import java.util.Stack;
 
